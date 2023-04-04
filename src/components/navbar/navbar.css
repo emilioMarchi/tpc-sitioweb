@@ -1,0 +1,6 @@
+.navbar {
+    background-color: black;
+}
+.navbar .navbar-toggler .navbar-toggler-icon{
+    color: white;
+}

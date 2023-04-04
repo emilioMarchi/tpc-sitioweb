@@ -1,8 +1,9 @@
 import { HomeCarouseItem } from "./homeCarouselItem/HomeCarouselItem"
+import './homeCarousel.css'
 
 export const HomeCarousel = () => {
     return(
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide home-carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <HomeCarouseItem/>

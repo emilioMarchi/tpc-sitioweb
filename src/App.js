@@ -8,7 +8,7 @@ import { Contacto } from './routes/Contacto';
 //
 //Components
 import { Header } from './components/header/Header';
-
+import { Footer } from './components/footer/Footer';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />}></Route>
 
         </Routes>
-
+        <Footer/>
     </div>
   );
 }
