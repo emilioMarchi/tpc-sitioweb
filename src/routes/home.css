@@ -1,3 +1,33 @@
 .home {
     padding-top: 96px;
 }
+
+.home .home-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem;
+    color: rgb(245, 239, 255);
+} 
+.home .home-title h1 {
+    font-size: 38px; font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1;
+    
+}
+.home .home-cotize-button {
+    padding: 0.5rem 1rem;
+    padding-bottom: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home .home-cotize-button h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+.home .home-cotize-button button {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 0.5px solid rgba(83, 253, 230, 0.808);
+    border-radius: 0.5rem;
+    width: 100%;
+}

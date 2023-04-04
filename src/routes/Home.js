@@ -12,7 +12,7 @@ export const Home = () => {
         <div className='home'>
             <HomeCarousel/>
             <div className='home-title'>
-                <h1>Diseñamos, Planificamos, Desarrollamos</h1>
+                <h1>Diseñamos, planificamos y desarrollamos tu estrategia digital</h1>
             </div>
             <div className='home-cotize-button'>
                 <h3>Cotiza tu proyecto en un par de clicks. Contactanos para obtener un presupuesto</h3>
