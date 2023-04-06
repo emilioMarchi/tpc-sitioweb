@@ -1,6 +1,24 @@
 .navbar {
     background-color: black;
+    position: relative;
+     min-height: 25%;
+     width: 100%;
+
 }
-.navbar .navbar-toggler .navbar-toggler-icon{
-    color: white;
+.navbar .container-fluid {
+    display: flex; flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    
+    border-radius: 0.5rem;
 }
+
+
+.navbar .navbar-toggler {
+    
+
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 20px;
+} 

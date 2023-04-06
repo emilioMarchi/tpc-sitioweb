@@ -1,7 +1,12 @@
+import './servicesCarouselItem.css'
 export const ServicesCarouselItem = () => {
     return(
-        <div>
-            <h4>services item</h4>
+        <div className='services-carousel-item'>
+         
+            <div className='carousel-item-body'>
+                <h4>Tienda Online</h4>
+                
+            </div>
         </div>
     )
 }

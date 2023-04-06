@@ -3,7 +3,7 @@
     display: flex; 
     padding: 1rem;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(9, 8, 10, 0.822);
 }
 
 .home-carousel-item .carousel-item-row{
@@ -11,13 +11,14 @@
 
 }
 .home-carousel-item .title h2{
-    min-width: 35%; max-width: 65%; 
-    font-size: 10px; font-weight: 300;
-    padding: 0.2rem;
+    min-width: 35%; 
+    font-size: 18px; font-weight: 300;
+    padding: 0.5rem 1rem;
     background-color: rgba(0, 0, 0, 0.329);
     border: 0.5px solid rgba(88, 250, 236, 0.39);
     border-radius: 0.5rem;
     color: white;
+    text-align: center;
 }
 .home-carousel-item .title h3 {
     font-size: 24px; font-weight: 400;
@@ -25,13 +26,13 @@
     color: white;
 }
 .home-carousel-item .title .carousel-item-button {
-    width: 55%;
+    width: 65%;
     background-color: rgba(83, 253, 230, 0.808);
     border-radius: 0.5rem;
     color: black;
-    font-size: 16px; font-weight: 700;
+    font-size: 20px; font-weight: 700;
     line-height: 1;
-    padding: 0.5rem; margin-top: 1rem;
+    margin-top: 1rem;
     
     
 
@@ -39,4 +40,17 @@
 
 .home-carousel-item .carousel-item-row img {
     width: 100%;
+}
+
+/*comentario*/
+@media only screen and (min-width: 820px) {
+    .home-carousel-item {
+        height: 450px;
+    }
+    .home-carousel-item .title h3 {
+        font-size: 34px;
+    }
+    .home-carousel-item .title .carousel-item-button {
+        font-size: 22px;
+    }
 }

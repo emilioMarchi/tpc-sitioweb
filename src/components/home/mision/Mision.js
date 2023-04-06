@@ -1,14 +1,15 @@
+import './mision.css'
+
 export const Mision = () => {
     return(
-        <div>
-            <div>
-                <h4>Mision</h4>
-                <h4>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </h4>
-            </div>
-            <div>
-                <h4>Propuesta de valor</h4>
-                <h4>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </h4>
-                <a href='/servicios' className='btn-dark'>Servicios</a>
+        <div className='mision-section'>
+        
+            <div className='mision-section-1'>
+                
+                <div className='mision-section-title'>
+                    <h4>Nuestro objetivo es colaborar con los tuyos, trayendo propuestas que le sirvan a tu negocio </h4>
+                    <a href='/servicios' className='btn-dark'>Quiero saber más</a>
+                </div>
             </div>
         </div>
     )
