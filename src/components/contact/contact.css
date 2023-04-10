@@ -1,0 +1,44 @@
+.contact {
+    display: flex; flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    margin-top: 4rem;
+    
+}
+.contact .contact-title{
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+.contact .contact-title h4 {
+    font-size: 24px; font-weight: 400;
+    line-height: 1;
+    padding: 0 0.5rem;
+}
+.contact .form form {
+    display: flex; flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+}
+.contact .form form input {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: rgba(0, 0, 0, 0.836);;
+    border-radius: 0.5rem;
+    color: white;
+    margin: 0.5rem 0;
+    width: 100%; height: 2rem;
+    font-size: 18px;
+}
+.contact .form form button {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100%;
+    color: rgb(255, 255, 255);
+}

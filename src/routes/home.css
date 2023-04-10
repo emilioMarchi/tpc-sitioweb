@@ -4,7 +4,7 @@
 }
 
 .home .home-title {
-    background-color: rgba(0, 0, 0, 0.5);
+ 
     padding: 1rem 1rem;
     color: rgb(245, 239, 255);
 } 
@@ -18,7 +18,7 @@
     padding: 0.5rem 1rem;
     padding-bottom: 6rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+
 }
 .home .home-cotize-button h3 {
     font-size: 20px;

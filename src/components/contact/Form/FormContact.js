@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik } from 'formik';
 
 const FormContact = () => (
-  <div>
+  <div className='form'>
     <Formik
       initialValues={{ name: '', email: '', text: ''  }}
       validate={values => {
@@ -37,6 +37,8 @@ const FormContact = () => (
           <input
             type="name"
             name="name"
+            placeholder='Nombre'
+
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.name}
@@ -45,6 +47,7 @@ const FormContact = () => (
           <input
             type="email"
             name="email"
+            placeholder='Número de contacto o Correo electónico'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
@@ -53,13 +56,15 @@ const FormContact = () => (
           <input
             type="text"
             name="text"
+            placeholder='Contanos que buscás'
+
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.text}
           />
           {errors.email && touched.email && errors.email}
           <button type="submit" disabled={isSubmitting}>
-            Submit
+            Enviar
           </button>
         </form>
       )}

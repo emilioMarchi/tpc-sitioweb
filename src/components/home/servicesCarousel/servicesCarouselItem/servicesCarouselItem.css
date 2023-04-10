@@ -1,0 +1,32 @@
+.services-carousel-item {
+    display: flex; flex-direction: column;
+}
+.services-carousel-item .carousel-item-row {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+.services-carousel-item .carousel-item-row h2 {
+    font-size: 24px; font-weight: 700;
+    width: 65%;
+    line-height: 1;
+}
+.services-carousel-item .carousel-item-row h3 {
+    font-size: 20px; font-weight: 200;
+    line-height: 1; letter-spacing: 1px;
+    padding: 0.5rem;
+}
+.services-carousel-item .carousel-item-row img {
+    width: 10rem;
+}
+.services-carousel-item .carousel-item-row button {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 0.5px solid rgba(83, 253, 230, 0.808);
+    color: white;
+    border-radius: 0.5rem;
+    width: 100%;
+}
