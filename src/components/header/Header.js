@@ -3,9 +3,9 @@ import './header.css'
 export const Header = ()=> {
     return(
         <div className='header'>
-            <div className='header-logo'>
+            <a href={`${window.location.pathname == '/' ? '/#' : '/'}`} className='header-logo'>
                 <img src='/img/logo.png' />
-            </div>
+            </a>
             <Navbar/>
         </div>
     )

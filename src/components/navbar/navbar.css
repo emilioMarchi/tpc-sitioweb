@@ -9,16 +9,43 @@
     display: flex; flex-direction: column;
     align-items: flex-end;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.801);
-    
+   
     border-radius: 0.5rem;
 }
+.navbar .container-fluid .navbar-toggler {
+    z-index: 100;
+}
 
-
-.navbar .navbar-toggler {
+.navbar .container-fluid .navbar-collapse {
+    width: 100vw; height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+    background-color: rgba(13, 11, 14, 0.973);
     
+    align-items: center;
 
 }
-.navbar .navbar-nav .nav-link {
-    font-size: 20px;
+
+
+
+.navbar .navbar-nav {
+    width: 100%; height: 100%;
+    justify-content: center;
+}
+.navbar .navbar-nav .link {
+    
+    font-size: 22px; font-weight: 300;
+    color: rgba(255, 255, 255, 0.699);
 } 
+.navbar .navbar-nav .link {
+    
+    font-size: 22px; font-weight: 300;
+    color: rgba(255, 255, 255, 0.699);
+} 
+.navbar .navbar-nav .selected{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    
+}
+
+

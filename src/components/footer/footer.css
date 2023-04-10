@@ -20,7 +20,7 @@
     
     width: 2rem;
     filter: opacity(40%);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 .footer .icons-bar .icon img:hover {
     width: 2.2rem;
@@ -56,7 +56,11 @@
     width: 100%; 
     padding: 0.5rem 1rem;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.863);
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.521);
+    font-size: 20px; font-weight: 300;
     cursor: pointer;
+}
+.footer-nav ul li .selected {
+    
+    color: rgba(255, 255, 255, 0.979);
 }

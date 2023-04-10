@@ -1,27 +1,32 @@
+import React, {useState} from 'react'
 import './footer.css'
 
 export const Footer = () => {
+
+    const [navSelected, setNavSelected] = useState(window.location.pathname)
+
+
     return(
         <div className='footer'>
             <div className='footer-nav'>
                 <ul>
                     <li>
-                        <a href='/incio'>
+                        <a className={`${navSelected == '/' ? 'selected' : ''}`} href='/incio'>
                             Inicio   
                         </a>
                     </li>
                     <li>
-                        <a href='/servicios'>
+                        <a className={`${navSelected == '/servicios' ? 'selected' : ''}`} href='/servicios'>
                             Servicios
                         </a>
                     </li>
                     <li>
-                        <a href='/nosotros'>
+                        <a className={`${navSelected == '/nosotros' ? 'selected' : ''}`} href='/nosotros'>
                             Nosotros
                         </a>
                     </li>
                     <li>
-                        <a href='/contacto'>
+                        <a className={`${navSelected == '/contacto' ? 'selected' : ''}`} href='/contacto'>
                             Contacto
                         </a>
                     </li>
