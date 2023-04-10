@@ -1,6 +1,6 @@
 .home {
     padding-top: 96px;
-    padding-bottom: 2rem;
+    
 }
 
 .home .home-title {
@@ -16,7 +16,7 @@
 }
 .home .home-cotize-button {
     padding: 0.5rem 1rem;
-    padding-bottom: 6rem;
+    padding-top: 2rem;
     color: white;
 
 }

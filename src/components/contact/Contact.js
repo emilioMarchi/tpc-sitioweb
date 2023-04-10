@@ -7,6 +7,15 @@ export const Contact = () => {
             <div className='contact-title'>
                 <h4>Dejanos un mensaje o contactanos por donde te quede más cómodo</h4>
             </div>
+            <div className='icons-bar'>
+                <div className='icon'>
+                    <img src='/img/icons/wpp-black.png' />
+                </div>
+                <div className='icon'>
+                    <img src='/img/icons/ig-black.png' />
+                </div>
+                
+            </div>
             <FormContact />
         </div>
     )
