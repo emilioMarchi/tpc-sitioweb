@@ -1,19 +1,18 @@
+import Carousel from 'react-bootstrap/Carousel';
 import { ServicesCarouselItem } from "./servicesCarouselItem/ServicesCarouselItem"
 
 export const ServicesCarousel = () => {
     return(
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+        <Carousel interval={2500} controls={false} indicators={false}>
+            <Carousel.Item>
                     <ServicesCarouselItem/>
-                </div>
-                <div class="carousel-item">
+            </Carousel.Item>
+            <Carousel.Item>
                     <ServicesCarouselItem/>
-                </div>
-                <div class="carousel-item">
+            </Carousel.Item>
+            <Carousel.Item>
                     <ServicesCarouselItem/>
-                </div>
-            </div>
-        </div>
+            </Carousel.Item>
+        </Carousel>
     )
 }

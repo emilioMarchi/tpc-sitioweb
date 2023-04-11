@@ -1,7 +1,10 @@
+import React from 'react'
+import { ServicesDescription } from "../components/servicios/servicesDescription/ServicesDescription"
+
 export const Servicios = () => {
     return(
-        <div>
-            servicios
+        <div className='pt-page'>
+            <ServicesDescription />
         </div>
     )
 }

@@ -9,7 +9,7 @@ import './home.css'
 
 export const Home = () => {
     return(
-        <div className='home'>
+        <div className='home pt-page'>
             <HomeCarousel/>
             <div className='home-title'>
                 <h1>Diseñamos, planificamos y desarrollamos tu estrategia digital</h1>
