@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className='footer-nav'>
                 <ul>
                     <li>
-                        <a className={`${navSelected == '/' ? 'selected' : ''}`} href='/incio'>
+                        <a className={`${navSelected == '/' ? 'selected' : ''}`} href='/'>
                             Inicio   
                         </a>
                     </li>
