@@ -5,7 +5,7 @@ import { ServicesCarousel } from '../../home/servicesCarousel/ServicesCarousel'
 
 
 
-export const ServiceCatItem = ({imageUrl}) => {
+export const ServiceCatItem = ({title, services, imageUrl}) => {
 
     
     const [carouselState, setCarouselState] = useState(false)
@@ -14,8 +14,19 @@ export const ServiceCatItem = ({imageUrl}) => {
         <div className='service-cat'>
             <div className='service-cat-header' style={{backgroundImage: `url(${imageUrl})`}}>
                 <div className='service-title'>
-                    <h2>Nombre de categoria</h2>
+                    <h2>{title}</h2>
+                   
+                </div>
+                <div className='service-description'>
                     {
+                        services.map(item => {
+                            return(
+                                <h3>{item}</h3>
+                            )
+                        })
+                    }
+                </div>
+                {
                         carouselState == false ?
                         <FontAwesomeIcon className='service-icon' icon={faCircleChevronDown} 
                             onClick={()=>{
@@ -36,13 +47,6 @@ export const ServiceCatItem = ({imageUrl}) => {
                             }}
                         />
                     }
-                </div>
-                <div className='service-description'>
-                    <h3>Nombre de servicio</h3>
-                
-                    <h3>Nombre de servicio</h3>
-                    <h3>Nombre de servicio</h3>
-                </div>
             </div>
             <div className={carouselState == false ? 'service-cat-body d-none  ' : 'service-cat-body d-block' }>
                 <ServicesCarousel/>
