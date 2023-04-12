@@ -5,7 +5,7 @@ export const Navbar = () => {
 
     const [navSelected, setNavSelected] = useState(window.location.pathname)
 
-    console.log(navSelected)
+
  
     return(
         <nav class=" navbar-expand-lg navbar-dark navbar">

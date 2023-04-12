@@ -1,0 +1,44 @@
+.service-cat .service-cat-header {
+    width: 100%; min-height: 6rem;
+
+    padding: 1rem 0.5rem;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.service-cat .service-cat-header .service-title {
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+.service-cat .service-cat-header .service-title h2 {
+    
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 26px; font-weight: 700;
+}
+.service-cat .service-cat-header .service-title .service-icon {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.service-cat .service-cat-header .service-description {
+    display: flex; flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+}
+.service-cat .service-cat-header .service-description h3 {
+    
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 18px; font-weight: 300;
+    margin: 0.5rem;
+    line-height: 0.9;
+}
+
+.service-cat .service-cat-body {    
+    padding: 1rem 0;
+}
