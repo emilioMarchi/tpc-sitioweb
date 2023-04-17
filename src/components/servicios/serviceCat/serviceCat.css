@@ -47,3 +47,41 @@
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, 0.678);
 }
+
+.service-cat .service-cat-body  .services-cat-list .service-list-item {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.service-cat .service-cat-body  .services-cat-list .service-list-item .item-body {
+    text-align: start;
+    padding: 1rem;
+    width: 75%;
+    color: white;
+}
+.service-cat .service-cat-body  .services-cat-list .service-list-item .item-body h2 {
+    margin-bottom: 0;
+    font-size: 20px; font-weight: 700;
+    line-height: 1;
+}
+.service-cat .service-cat-body  .services-cat-list .service-list-item .item-body h3 {
+    font-size: 18px; font-weight: 100;
+    margin-top: 0.5rem;
+    
+}
+.service-cat .service-cat-body  .services-cat-list .service-list-item img {
+    width: 6rem;
+}
+.service-cat .service-cat-body  .services-cat-list .service-list-item button {
+
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 100%;
+    color: rgb(255, 255, 255);
+}

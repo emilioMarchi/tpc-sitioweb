@@ -1,0 +1,33 @@
+.services-ben-list{
+    background-color: rgba(219, 120, 223, 0.109);
+}
+.services-ben-list .service-ben-item{
+    min-height: 350px;
+    padding: 0.5rem;
+    color: white;
+
+    
+    background-image: url('/public/img/img.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 160%;
+    background-position-y: center;
+}
+.services-ben-list .service-ben-item h3 {
+    padding-top: 3rem;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 0.9; letter-spacing: 1px;
+    z-index: 50;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    
+}
+.services-ben-list .service-ben-item a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.561);
+    color: white;
+}

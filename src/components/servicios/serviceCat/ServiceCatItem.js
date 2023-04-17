@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronDown, faCircleChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { ServicesCarousel } from '../../home/servicesCarousel/ServicesCarousel'
+import { ServicesList } from './ServicesList'
 
 
 
@@ -9,7 +9,7 @@ export const ServiceCatItem = ({title, services, imageUrl}) => {
 
     
     const [carouselState, setCarouselState] = useState(false)
-
+    
     return(
         <div className='service-cat'>
             <div className='service-cat-header' style={{backgroundImage: `url(${imageUrl})`}}>
@@ -49,7 +49,7 @@ export const ServiceCatItem = ({title, services, imageUrl}) => {
                     }
             </div>
             <div className={carouselState == false ? 'service-cat-body d-none  ' : 'service-cat-body d-block' }>
-                <ServicesCarousel/>
+                    <ServicesList services={services} />
             </div>
         </div>
     )
