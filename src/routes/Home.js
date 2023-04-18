@@ -15,8 +15,8 @@ export const Home = () => {
                 <h1>Diseñamos, planificamos y desarrollamos tu estrategia digital</h1>
             </div>
             <div className='home-cotize-button'>
-                <h3>Cotiza tu proyecto en un par de clicks. Contactanos para obtener un presupuesto</h3>
-                <button className='btn-dark'>Cotizar</button>
+                <h3>Contanos que solución estás buscando</h3>
+                <button className='btn-dark'>Contanos</button>
             </div>
             <Mision/>
             <ServicesCarousel/>
