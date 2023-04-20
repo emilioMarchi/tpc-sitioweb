@@ -21,7 +21,7 @@
     text-align: center;
 }
 .home-carousel-item .title h3 {
-    font-size: 24px; font-weight: 400;
+    font-size: 24px; font-weight: 300;
     line-height: 1;
     color: white;
 }
@@ -30,8 +30,8 @@
     background-color: rgba(83, 253, 230, 0.808);
     border-radius: 0.5rem;
     color: black;
-    font-size: 20px; font-weight: 700;
-    line-height: 1;
+    font-size: 20px; font-weight: 500;
+    line-height: 0.9;
     margin-top: 1rem;
     
     

@@ -1,0 +1,40 @@
+.nosotros-team {
+    display: flex; flex-wrap: nowrap;
+    overflow-y: scroll;
+} 
+.nosotros-team-item {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    margin: 0.5rem; 
+    background-color: rgb(4, 3, 5);
+    border-radius: 0.5rem;
+}
+.nosotros-team-item img {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius:150px;
+}
+.nosotros-team-item .team-body {
+    text-align: center;
+    color: white;
+    margin: 1rem 0;
+}
+.nosotros-team-item .team-body h3 {
+    font-size: 22px; font-weight: 600;
+    line-height: 0.9; letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.nosotros-team-item .team-body .team-body-tareas {
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: center;
+    padding: 0.5rem;
+    
+}
+.nosotros-team-item .team-body .team-body-tareas h4 {
+    font-size: 18px; font-weight: 100;
+    margin: 0.2rem 0.5rem;
+    line-height: 0.9; letter-spacing: 1px;
+    
+    
+}
