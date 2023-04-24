@@ -4,7 +4,7 @@ export const Nosotros = () => {
     return(
         <div>
             <NosotrosBio/>
-            <NosotrosTeam />
+           
         </div>
     )
 }

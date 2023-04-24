@@ -1,6 +1,10 @@
 .mision-section {
     height: 45%;
     margin: 4rem 0rem;
+    background-image: url('/public/img/agencia.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .mision-section .mision-section-1 {

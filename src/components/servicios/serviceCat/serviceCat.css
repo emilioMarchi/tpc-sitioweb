@@ -1,8 +1,8 @@
 .service-cat .service-cat-header {
-    width: 100%; min-height: 10rem;
-
+    min-height: 10rem;
+    margin: 0.5rem;
     padding: 1rem 0.5rem;
-    
+    border-radius:1rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,6 +46,8 @@
 .service-cat .service-cat-body {    
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, 0.678);
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .service-cat .service-cat-body  .services-cat-list .service-list-item {
