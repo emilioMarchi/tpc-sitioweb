@@ -6,6 +6,7 @@ import { ServicesCarousel } from "../components/home/servicesCarousel/ServicesCa
 import { Contact } from "../components/contact/Contact"
 
 import './home.css'
+import { ServicesSteps } from "../components/servicios/servicesSteps/ServicesSteps"
 
 export const Home = () => {
     return(
@@ -20,6 +21,7 @@ export const Home = () => {
             </div>
             <Mision/>
             <ServicesCarousel/>
+            <ServicesSteps/>
             <Contact/>
         </div>  
     )
