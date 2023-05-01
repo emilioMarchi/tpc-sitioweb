@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './servicesSteps.css'
 
 export const ServicesStepItem = ({data}) => {
-    console.log(data.icon)
+    
 
     return (
         <div className='services-step-item'>

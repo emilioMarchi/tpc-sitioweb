@@ -1,15 +1,16 @@
-.mision-section {
+.mision {
     height: 45%;
     margin: 4rem 0rem;
-    background-image: url('/public/img/agencia.webp');
+
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.39);
 
 }
 
-.mision-section .mision-section-1 {
-    padding: 5rem 0;
-    
+.mision .mision-section {
+    padding: 1rem 0;
     display: flex;
     align-items: center;
     text-align: center;
@@ -24,19 +25,58 @@
 }
 
 
-.mision-section .mision-section-title h4{
-    font-size: 28px;
+.mision .mision-section-title h4{
+    font-size: 26px;
     font-weight: 300; 
     padding: 1rem 0.5rem 2rem;
     line-height: 0.9; letter-spacing: 1px;
     color: rgb(255, 255, 255);
 }
-.mision-section .mision-section-title a {
+.mision .mision-section-title a {
     padding: 1rem; margin: 1rem 0;
     border-radius:0.5rem;
-    font-size: 24px; font-weight: 400;
+    font-size: 22px; font-weight: 400;
     text-decoration: none;
     background-color: rgba(83, 253, 230, 0.808);
     width: 100%;
     color: black;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .mision {
+        padding: 2rem 0;
+    }
+    .mision .mision-section-title h4 {
+        font-size: 36px;
+        margin: 2rem;
+        padding: 1rem 2rem 2rem;
+    }
+    .mision .mision-section-title a {
+        font-size: 28px;
+    }
+    .services-description .title h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .mision {
+        display: flex;
+        padding: 0 4rem;
+
+    }
+    .mision .mision-section {
+        width:50%;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        padding: 2rem;
+    }
+    .mision  {
+        display: flex;
+    }
+
+
+    .mision .mision-section-title h4 {
+        padding-left:1rem; padding-right:1rem;
+    }
 }

@@ -21,16 +21,14 @@ const ServicesStepsData = [
 
 export const ServicesSteps = () => {
     return(
-        <Carousel className='services-steps-carousel' interval={5000} controls={false} indicators={false}>
+        <div className='services-steps-carousel'>
             {
                 ServicesStepsData.map((item) => {
                     return(
-                        <Carousel.Item>
-                                <ServicesStepItem data={item}/>
-                        </Carousel.Item>
+                            <ServicesStepItem data={item}/>
                     )
                 })
             }
-        </Carousel>
+        </div>
     )
 }

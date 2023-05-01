@@ -62,7 +62,7 @@ const FormContact = () => (
             onBlur={handleBlur}
             value={values.text}
           />
-          {errors.email && touched.email && errors.email}
+          
           <button type="submit" disabled={isSubmitting}>
             Enviar
           </button>

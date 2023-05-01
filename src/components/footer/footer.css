@@ -64,3 +64,14 @@
     
     color: rgba(255, 255, 255, 0.979);
 }
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .footer-nav ul li a {
+        font-size: 28px;
+        padding: 1rem;
+    }
+    .footer .icons-bar .icon img {
+        width: 2.5rem;
+    }
+}

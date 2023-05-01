@@ -2,16 +2,15 @@
     display: flex; flex-direction: column;
     justify-content: center; 
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.945);
+
     height: 600px;
     
     
-    background: linear-gradient(-45deg, #d883fad3, #f4f4f8e1, #71dbfce5);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+
+	
 }
 .contact .contact-title{
-    
+    color: rgb(244, 238, 255);
     padding: 0 1rem;
 }
 .contact .contact-title h4 {
@@ -21,25 +20,26 @@
 }
 
 
-.contact .icons-bar {
+.contact .contact-title .icons-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
-.contact .icons-bar .icon {
+.contact .contact-title .icons-bar .icon {
     display: flex; justify-content: center;
     align-items: center;
     margin: 0.5rem;
     cursor: pointer;
 }
-.contact .icons-bar .icon img {
+.contact .contact-title .icons-bar .icon img {
     
     width: 2rem;
     filter: opacity(75%);
+    filter: brightness(0) invert(1);
     transition: all 0.5s;
 }
-.contact .icons-bar .icon img:hover {
+.contact .contact-title .icons-bar .icon img:hover {
     width: 2.2rem;
 }
 
@@ -62,7 +62,7 @@
     padding: 1.5rem 0;
     background-color: rgba(0, 0, 0, 0.719);;
     border-radius: 0.5rem;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0.5rem 0;
     width: 100%; height: 2rem;
     font-size: 18px;
@@ -90,4 +90,55 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media only screen and (min-width: 1080px) {
+    .contact {
+        flex-direction: row;
+        height: 100%;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+    .contact .contact-title{
+        width: 50%;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        
+    }
+    .contact .contact-title h4{
+        font-size: 32px;
+        font-weight: 700; 
+        padding: 0 2rem;
+    }
+
+    .contact .form {
+        width: 50%;
+        display: flex; flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact {
+        height: 800px;
+    }
+    .contact .contact-title h4 {
+        font-size: 34px;
+        padding: 0 4rem;
+    }
+    .contact .contact-title .icons-bar .icon img {
+        width: 3rem;
+    }
+
+    
+    .contact .form form input {
+        height: 4rem;
+        font-size: 26px;
+    }
+    .contact .form form button {
+        height: 4rem;
+        font-size: 26px;
+        padding: 0;
+    }
+
 }

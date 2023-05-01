@@ -10,20 +10,24 @@ import { Contacto } from './routes/Contacto';
 import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer';
 
+
+
 function App() {
 
+  
   return (
-    <div className="App">
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/servicios" element={<Servicios />}></Route>
-          <Route path="/nosotros" element={<Nosotros />}></Route>
-          <Route path="/contacto" element={<Contacto />}></Route>
+    
+      <div className="App">
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/servicios" element={<Servicios />}></Route>
+            <Route path="/nosotros" element={<Nosotros />}></Route>
+            <Route path="/contacto" element={<Contacto />}></Route>
 
-        </Routes>
-        <Footer/>
-    </div>
+          </Routes>
+          <Footer/>
+      </div>
   );
 }
 

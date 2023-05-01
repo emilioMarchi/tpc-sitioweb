@@ -12,12 +12,14 @@ export const Home = () => {
     return(
         <div className='home pt-page'>
             <HomeCarousel/>
-            <div className='home-title'>
-                <h1>Diseñamos, planificamos y desarrollamos tu estrategia digital</h1>
-            </div>
-            <div className='home-cotize-button'>
-                <h3>Contanos que solución estás buscando</h3>
-                <button className='btn-dark'>Contanos</button>
+            <div className='d-flex justify-content-center pt-5 home-title-container'>
+                <div className='home-title'>
+                    <h1>Diseñamos, planificamos y desarrollamos tu estrategia digital</h1>
+                </div>
+                <div className='home-cotize-button'>
+                    <h3>Contanos que solución estás buscando</h3>
+                    <button className='btn-dark'>Contanos</button>
+                </div>
             </div>
             <Mision/>
             <ServicesCarousel/>

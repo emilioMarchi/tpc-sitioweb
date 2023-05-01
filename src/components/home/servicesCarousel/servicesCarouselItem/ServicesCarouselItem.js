@@ -1,17 +1,82 @@
+import React, {useEffect, useState} from 'react'
 import './servicesCarouselItem.css'
+import {useSelector, useDispatch} from 'react-redux'
+
+
+
+
 export const ServicesCarouselItem = () => {
+
+    const dispatch = useDispatch()
+    const servicesSliceState = useSelector(state=>state.servicesSlice)
+    const [catIndex, setCatIndex] = useState(0)
+    let windowWidth
+
+    useEffect(()=>{
+        if(servicesSliceState.navState == 'dev') {
+            setCatIndex(0)
+        }
+        if(servicesSliceState.navState == 'mrk') {
+            setCatIndex(1)
+        }
+        if(servicesSliceState.navState == 'content') {
+            setCatIndex(2)
+        } else {}
+        
+
+    }, [servicesSliceState])
+  
+    
     return(
-        <div className='services-carousel-item'>
-         
-            <div className='col carousel-item-row img'>
-                <img src='/img/img.png' />
-            </div>
-            <div className='col carousel-item-row title'>
-                    <h2>Campaña de marketing digital</h2>
-                    <h3>It is a long established fact that a reader will be distracted by the readable</h3>
-                    <button className='carousel-item-button btn'>Conocer servicio</button>
-                    
-                </div>
+        <div className={ 
+
+            
+             servicesSliceState.navState == 'content' && window.innerWidth > 479 && window.innerWidth < 840
+             ? 'services-list justify-content-start' : 'services-list justify-content-center'
+            }>
+            {
+                servicesSliceState.navState == 'dev' ? 
+                servicesSliceState.servicesData[catIndex].services.map((item)=>{
+                    return (
+                        <div className='services-card'>
+                            <img src='/img/ecosistema-logo.gif' />
+                            <div className='card-title'>
+                                <h3>{item.title}</h3>
+                                <h4>{item.description}</h4>
+
+                            </div>
+                        </div>
+                    )
+                }) : 
+                servicesSliceState.navState == 'mrk' ? 
+                servicesSliceState.servicesData[catIndex].services.map((item)=>{
+                    return (
+                        <div className='services-card'>
+                        <img src='/img/ecosistema-logo.gif' />
+                        <div className='card-title'>
+                            <h3>{item.title}</h3>
+                            <h4>{item.description}</h4>
+
+                        </div>
+                    </div>
+                    )
+                }) :
+                servicesSliceState.navState == 'content' ? 
+                servicesSliceState.servicesData[catIndex].services.map((item)=>{
+                    return (
+                        <div className='services-card'>
+                            <img src='/img/ecosistema-logo.gif' />
+                            <div className='card-title'>
+                                <h3>{item.title}</h3>
+                                <h4>{item.description}</h4>
+
+                            </div>
+                        </div>
+                    )
+                }) :
+                ''
+            }
+            
         </div>
     )
 }

@@ -1,0 +1,41 @@
+.services-carousel-nav {
+    display: flex;
+    justify-content: center;
+}
+.services-carousel-nav h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem; padding: 0.5rem 1rem;
+    width: 12rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    line-height: 1;
+    color: white;
+    cursor: pointer;
+    
+}
+.services-carousel-nav h2.active {
+    color: rgb(245, 139, 171);
+}
+
+@media only screen and (max-width: 480px) {
+    .services-carousel-nav {
+
+    }
+    .services-carousel-nav h2 {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .services-carousel-div {
+        margin: 10rem 0;
+    }
+    .services-carousel-nav h2 {
+        font-size: 32px;
+        width: 30%;
+    }
+}

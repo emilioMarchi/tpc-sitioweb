@@ -1,33 +1,81 @@
-.services-carousel-item {
+.services-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.services-list .services-card {
     display: flex; flex-direction: column;
-    margin-bottom: 2rem;
-}
-.services-carousel-item .carousel-item-row {
-    display: flex; flex-direction: column;
-    justify-content: center; align-items: center;
-    text-align: center;
-    padding: 0.5rem;
-    color: white;
-}
-.services-carousel-item .carousel-item-row h2 {
-    font-size: 28px; font-weight: 700;
-    width: 65%;
-    line-height: 1;
-}
-.services-carousel-item .carousel-item-row h3 {
-    font-size: 20px; font-weight: 200;
-    line-height: 1; letter-spacing: 1px;
-    padding: 0.5rem;
-}
-.services-carousel-item .carousel-item-row img {
-    width: 10rem;
-}
-.services-carousel-item .carousel-item-row button {
-    font-size: 18px;
-    padding: 0.5rem 1rem;
-    background-color: rgba(0, 0, 0, 0.63);
-    border: 0.5px solid rgba(83, 253, 230, 0.808);
-    color: white;
+    align-items: center; justify-content: center;
+    background-color: rgba(0, 0, 0, 0.719);
     border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: white;
     width: 100%;
+    height: 25rem;
+}
+.services-list .services-card .card-title {
+    text-align: center;
+}
+.services-list .services-card .card-title h3 {
+    font-size: 20px;
+}
+.services-list .services-card .card-title h4 {
+    font-size: 18px; font-weight: 300;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .services-carousel-container {
+       
+    }
+    .services-list {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .services-list .services-card { 
+        width: 20rem; height: 12rem;
+        margin: 0.2rem 0;
+    }
+    .services-list .services-card img {
+        width: 8rem;
+    }
+    .services-list .services-card .card-title {
+        height: 45%;   
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .services-list{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 1rem;
+        justify-content: center;
+    }
+    .services-list .services-card {
+        height: 35rem;
+        min-width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .services-list .services-card img {
+        width: 15rem;
+    }
+    .services-list .services-card .card-title {
+        height: 25%;
+    }
+    .services-list .services-card .card-title h3  {
+        font-size: 32px;
+    }
+    .services-list .services-card .card-title h4  {
+        font-size: 28px;
+    }
 }
