@@ -3,9 +3,9 @@
     justify-content: center; 
     text-align: center;
 
-    height: 600px;
+   
     
-    padding: 10rem 0 0 0;
+    padding: 3rem 0 0 0;
     margin-bottom: 3rem;
 
 	
@@ -96,9 +96,10 @@
 @media only screen and (min-width: 1080px) {
     .contact {
         flex-direction: row;
-        height: 100%;
+        height: 75vh;
         padding: 2rem;
         margin: 2rem 0;
+       
     }
     .contact .contact-title{
         width: 50%;

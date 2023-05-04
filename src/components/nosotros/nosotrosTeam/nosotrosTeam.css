@@ -11,6 +11,7 @@
     border-radius: 0.5rem;
     margin: 0 0.5rem;
     min-width: 40%;
+    
 }
 .nosotros-team-item img {
     width: 8rem;
@@ -38,12 +39,13 @@
     font-size: 16px; font-weight: 200;
     line-height: 0.9; letter-spacing: 1px;
     margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 @media only screen and (min-width: 481px) {
     .nosotros-team-item {
         min-width: 30%;
-        height: 60%;
+        height: 75%;
         padding: 0 1rem;
     }
     .nosotros-team-item img {
@@ -54,5 +56,15 @@
     }
     .nosotros-team-item .team-body .team-body-tareas h4 {
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .nosotros-team {
+        justify-content: center;
+    }
+    .nosotros-team-item {
+        min-width: 20%; width: 20%;
+        
     }
 }

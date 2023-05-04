@@ -13,7 +13,7 @@
     margin: 0;
 }
 .nosotros-presentacion .presentacion-item {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     margin-bottom: 0.5rem;
    
     border-radius: 0.5rem;
@@ -34,5 +34,7 @@
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 1;
+    width: 80%;
     
 }
+

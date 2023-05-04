@@ -1,7 +1,10 @@
 .footer {
+    width: 100%;
     margin: 0; padding: 0.5rem;
     background-color: rgba(0, 0, 0, 0.397);
     display: flex; flex-direction: column;
+    
+    bottom: 0;
 }
 .footer .icons-bar {
     display: flex;
@@ -32,7 +35,14 @@
     margin: 0.5rem 0rem;
     padding: 0 1rem;
 }
-
+.footer div div p {
+    color: rgba(249, 224, 255, 0.507);
+    font-size: 18px;
+}
+.footer .contact-info .info {
+    flex-direction: column;
+    font-size: 18px;
+}
 
 .footer-nav {
     display: flex; 
@@ -73,5 +83,9 @@
     }
     .footer .icons-bar .icon img {
         width: 2.5rem;
+    }
+    .footer div div p {
+        color: rgba(249, 224, 255, 0.609);
+        font-size: 20px;
     }
 }

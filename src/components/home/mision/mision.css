@@ -26,9 +26,9 @@
 
 
 .mision .mision-section-title h4{
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 300; 
-    padding: 1rem 0.5rem 2rem;
+    padding: 2rem 1rem ;
     line-height: 0.9; letter-spacing: 1px;
     color: rgb(255, 255, 255);
 }
@@ -41,6 +41,7 @@
     width: 100%;
     color: black;
 }
+
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .mision {
@@ -56,6 +57,12 @@
     }
     .services-description .title h2 {
         font-size: 36px;
+    }
+    
+    .mision .mision-section-title h4 {
+        padding: 2rem;
+        letter-spacing: 1px;
+        line-height: 0.9;
     }
 }
 

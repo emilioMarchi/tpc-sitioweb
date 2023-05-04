@@ -6,22 +6,22 @@ const TeamList = [
     {
         nombre:'Emilio',
         tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/agencia.webp',
+        urlImg:'/img/ecosistema-logo.gif',
     },
     {
         nombre:'Agustina',
         tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/agencia.webp',
+        urlImg:'/img/ecosistema-logo.gif',
     },
     {
         nombre:'Bruno',
         tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/agencia.webp',
+        urlImg:'/img/ecosistema-logo.gif',
     },
     {
         nombre:'Irene',
         tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/agencia.webp',
+        urlImg:'/img/ecosistema-logo.gif',
     },
 ]
 
