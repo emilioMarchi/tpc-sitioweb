@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
    
+   
 }
 .service-cat .service-cat-header .service-title {
     display: flex; 
@@ -27,11 +28,13 @@
     color: rgb(255, 255, 255);
     font-size: 2rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .service-cat .service-cat-header .service-description {
     display: flex; flex-wrap: wrap;
     align-items: center;
+    width: 35%;
     
 
 }
@@ -84,6 +87,27 @@
     font-weight: 200;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.863);
-    width: 100%;
+    width: 15rem;
     color: rgb(255, 255, 255);
+}
+
+
+@media only screen and (min-width: 481px) {
+    .service-cat {
+        margin:  0.5rem 10%;
+    }
+    .service-cat .service-cat-header{
+        justify-content: space-between;
+        padding: 1rem 5rem;
+    }
+    
+    .service-cat .service-cat-body  .services-cat-list .service-list-item .item-body {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .service-cat {
+        margin:  0.5rem 5%;
+    }
 }

@@ -19,30 +19,26 @@
    
 
 }
-.nosotros-bio .bio-body h3 {
-    
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 0.9;
-    margin: 0;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.644);
-}
+
 .nosotros-bio .bio-body h2  {
-     font-size: 62px; font-weight: 700;
-     line-height: 0.7; letter-spacing: 1px;
-     text-align: center;
-     padding-bottom: 2rem;
+    font-size: 54px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 0.8;
+    text-align: center;
+    padding-top: 25%;
     
 
 }
-.nosotros-bio .bio-body h4 {
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    line-height: 0.9;
-    padding: 0.2rem;
-    margin: 0;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.568);
-}
 
+@media only screen and (min-width: 481px) {
+    .nosotros-bio {
+        height: 75vh;
+        padding: 1rem 0;
+    }
+    .nosotros-bio .bio-body {
+        padding-bottom: 0;
+    }
+    
+}

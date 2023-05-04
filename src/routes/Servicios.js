@@ -12,7 +12,7 @@ export const Servicios = () => {
             <ServicesBanner />
             <ServiceCat />
             <ServicesSteps/>
-            <ServicesDescription />
+         
             <Contact />
         </div>
     )

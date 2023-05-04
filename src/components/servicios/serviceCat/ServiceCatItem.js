@@ -17,7 +17,7 @@ export const ServiceCatItem = ({title, services, imageUrl}) => {
                     <h2>{title}</h2>
                    
                 </div>
-                <div className='service-description'>
+                <div className='service-description'>   
                     {
                         services.map(item => {
                             return(

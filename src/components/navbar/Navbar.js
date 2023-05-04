@@ -30,8 +30,8 @@ export const Navbar = () => {
                            
                         >Nosotros</a>
                     </li>
-                    <li class="nav-item link">
-                        <a class={`nav-link active link ${navSelected == '/contacto' ? 'selected' : ''}`}  href="/contacto"
+                    <li class="nav-item">
+                        <a class={`nav-link active link ${navSelected == '/#contacto' ? 'selected' : ''}`}  href="/#contacto"
                             
                         >Contacto</a>
                     </li>

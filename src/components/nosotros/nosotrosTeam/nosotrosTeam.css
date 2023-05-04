@@ -7,7 +7,7 @@
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
    
-    background-color: rgb(4, 3, 5);
+    background-color: rgba(4, 3, 5, 0.794);
     border-radius: 0.5rem;
     margin: 0 0.5rem;
     min-width: 40%;
@@ -24,7 +24,7 @@
 
 }
 .nosotros-team-item .team-body h3 {
-    font-size: 22px; font-weight: 600;
+    font-size: 18px; font-weight: 500;
     line-height: 0.9; letter-spacing: 1px;
     margin-bottom: 0;
 }
@@ -34,4 +34,25 @@
     padding: 0.5rem;
     
 }
+.nosotros-team-item .team-body .team-body-tareas h4 {
+    font-size: 16px; font-weight: 200;
+    line-height: 0.9; letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
 
+@media only screen and (min-width: 481px) {
+    .nosotros-team-item {
+        min-width: 30%;
+        height: 60%;
+        padding: 0 1rem;
+    }
+    .nosotros-team-item img {
+        width: 10rem; height: 10rem;
+    }
+    .nosotros-team-item .team-body h3 {
+        font-size: 24px;
+    }
+    .nosotros-team-item .team-body .team-body-tareas h4 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+.nosotros-presentacion {
+    color: white;
+    padding: 3rem 0.5rem;
+    text-align: center;
+}
+.nosotros-presentacion h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 0.9;
+    padding: 1rem;
+    margin: 0;
+}
+.nosotros-presentacion .presentacion-item {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+   
+    border-radius: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    text-align:start;
+    display: flex; justify-content: center;
+    align-items: center;
+    
+    
+}
+.nosotros-presentacion .presentacion-item .icon {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+.nosotros-presentacion .presentacion-item h3{
+    
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1;
+    
+}

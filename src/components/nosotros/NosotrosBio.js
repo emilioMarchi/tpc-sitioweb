@@ -10,6 +10,7 @@ export const NosotrosBio = () => {
                 <h2>Quiénes somos</h2>
                 <NosotrosTeam />
             </div>
+            
         </div>
     )
 }

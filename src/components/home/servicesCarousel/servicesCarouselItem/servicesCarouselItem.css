@@ -43,7 +43,7 @@
     }
     .services-list .services-card { 
         width: 100%; height: 12rem;
-        margin: 0.2rem 0;
+        margin: 0.2rem 0.5rem;
     }
     .services-list .services-card img {
         width: 8rem;

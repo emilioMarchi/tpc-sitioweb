@@ -26,7 +26,7 @@ export const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a className={`${navSelected == '/contacto' ? 'selected' : ''}`} href='/contacto'>
+                        <a className={`${navSelected == '/contacto' || navSelected == '/#contacto' ?  'selected' : ''}`} href='/contacto'>
                             Contacto
                         </a>
                     </li>

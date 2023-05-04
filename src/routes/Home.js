@@ -18,7 +18,7 @@ export const Home = () => {
                 </div>
                 <div className='home-cotize-button'>
                     <h3>Contanos que solución estás buscando</h3>
-                    <button className='btn-dark'>Contanos</button>
+                    <a href='#contacto' className='btn-dark w-100'>Contanos</a>
                 </div>
             </div>
             <Mision/>
