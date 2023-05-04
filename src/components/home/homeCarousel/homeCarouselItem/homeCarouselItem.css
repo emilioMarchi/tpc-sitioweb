@@ -4,12 +4,14 @@
         display: flex; 
         padding: 1rem;
         align-items: center;
-    
+        background-size:50%;
+        background-position: center right;
+        background-repeat: no-repeat;
     }
     
     .home-carousel-item .carousel-item-row{
         display: flex; flex-direction: column;
-    
+
     }
     .home-carousel-item .title h2{
         min-width: 35%; 
@@ -22,13 +24,13 @@
         text-align: center;
     }
     .home-carousel-item .title h3 {
-        font-size: 24px; font-weight: 400;
-        line-height: 1;
+        font-size: 26px; font-weight: 400;
+        line-height: 1; 
         color: white;
     }
     .home-carousel-item .title .carousel-item-button {
         width: 65%;
-        background-color: rgba(83, 253, 230, 0.808);
+        background-color: rgba(117, 255, 255, 0.808);
         border-radius: 0.5rem;
         color: black;
         font-size: 20px; 
@@ -56,6 +58,7 @@
         }
         .home-carousel-item .title h3 {
             font-size: 36px;
+            letter-spacing: 1px;
         }
         .home-carousel-item .title .carousel-item-button  {
             font-size: 24px;
