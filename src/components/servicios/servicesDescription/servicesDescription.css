@@ -40,9 +40,9 @@
 }
 .services-description .services-list  .service h3 {
     color: white;
-    font-size: 20px; font-weight: 200;
+    font-size: 22px; font-weight: 200;
     letter-spacing: 1px;
-    line-height: 0.9;
+    line-height: 1;
     margin: 0; margin-left: 1rem;
 
 }

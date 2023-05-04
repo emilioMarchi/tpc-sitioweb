@@ -1,5 +1,23 @@
 import React from 'react'
 import './servicesDescription.css'
+import { ServicesDescriptionItem } from './ServicesDescriptionItem'
+const servicesDescriptionData = [
+    {
+        description: `Construimos una estrategia digital para que la gente te
+        encuentre.`,
+        icon: ''
+    },
+    {
+        description: `Nos ocupamos del contenido gráfico para tus redes con calidad
+        y creatividad.`,
+        icon: ''
+    },
+    {
+        description: `Le brindamos a tu negocio presencia online y automatización. 
+        Disponibilidad las 24hs.`,
+        icon: ''
+    },
+]
 
 export const ServicesDescription = () => {
     return(
@@ -8,18 +26,14 @@ export const ServicesDescription = () => {
                 <h2>¿Qué podemos hacer por tu negocio?</h2>
             </div>
             <div className='services-list'>
-                <div className='service'>
-                    <img src='/img/icons/content-icon.png' />
-                    <h3>Descripcion del servicio en cuestion explicando bla bla bla</h3>
-                </div>
-                <div className='service'>
-                    <img src='/img/icons/content-icon.png' />
-                    <h3>Descripcion del servicio en cuestion explicando bla bla bla</h3>
-                </div>
-                <div className='service'>
-                    <img src='/img/icons/content-icon.png' />
-                    <h3>Descripcion del servicio en cuestion explicando bla bla bla</h3>
-                </div>
+                
+                {
+                    servicesDescriptionData.map(item => {
+                        return(
+                            <ServicesDescriptionItem data={item} />
+                        )
+                    }) 
+                }
             </div>
         </div>
     )

@@ -9,7 +9,10 @@ export const Mision = () => {
             <div className='mision-section'>
                 
                 <div className='mision-section-title'>
-                    <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</h4>
+                    <h4>En <b>Tres punto cero</b> entendemos al desarrollo del ecosistema digital
+                    de una marca como la orquestación de herramientas y técnicas correlacionadas para
+                    promover un negocio a través de internet.
+                    </h4>
                     <a href='/servicios' className='btn-dark'>Quiero saber más</a>
                 </div>
             </div>
