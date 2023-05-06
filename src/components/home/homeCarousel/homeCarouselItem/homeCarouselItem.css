@@ -27,6 +27,7 @@
         font-size: 26px; font-weight: 400;
         line-height: 1; 
         color: white;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     }
     .home-carousel-item .title .carousel-item-button {
         width: 65%;
@@ -71,16 +72,19 @@
     .home-carousel-item {
         height: 350px;
         padding: 0 10%;
+        background-size: 35%;
     }
     .home-carousel-item .title h2 {
         margin-bottom: 2rem;
-        width: 50%;
-     
+        width: 25%;
+        
     }
     .home-carousel-item .title h3 {
         font-size: 34px;
+        width: 75%;
     }
     .home-carousel-item .title .carousel-item-button {
         font-size: 20px;
+        width: 40%;
     }
 }

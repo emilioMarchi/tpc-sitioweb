@@ -35,32 +35,8 @@ export const ServicesCarouselItem = () => {
              ? 'services-list justify-content-start' : 'services-list justify-content-center'
             }>
             {
-                servicesSliceState.navState == 'dev' ? 
-                servicesSliceState.servicesData[catIndex].services.map((item)=>{
-                    return (
-                        <div className='services-card'>
-                            <img src='/img/ecosistema-logo.gif' />
-                            <div className='card-title'>
-                                <h3>{item.title}</h3>
-                                <h4>{item.description}</h4>
-
-                            </div>
-                        </div>
-                    )
-                }) : 
-                servicesSliceState.navState == 'mrk' ? 
-                servicesSliceState.servicesData[catIndex].services.map((item)=>{
-                    return (
-                        <div className='services-card'>
-                        <img src='/img/ecosistema-logo.gif' />
-                        <div className='card-title'>
-                            <h3>{item.title}</h3>
-                            <h4>{item.description}</h4>
-
-                        </div>
-                    </div>
-                    )
-                }) :
+                servicesSliceState.navState == 'dev' ||
+                servicesSliceState.navState == 'mrk' ||
                 servicesSliceState.navState == 'content' ? 
                 servicesSliceState.servicesData[catIndex].services.map((item)=>{
                     return (
@@ -68,12 +44,13 @@ export const ServicesCarouselItem = () => {
                             <img src='/img/ecosistema-logo.gif' />
                             <div className='card-title'>
                                 <h3>{item.title}</h3>
-                                <h4>{item.description}</h4>
-
+                                <h4>{item.shortDescription}</h4>
                             </div>
+                                <a href={`/servicios/:${item.path}`}>Ver más</a>
                         </div>
                     )
-                }) :
+                }) : 
+               
                 ''
             }
             

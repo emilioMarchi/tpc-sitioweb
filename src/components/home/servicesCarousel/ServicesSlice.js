@@ -8,12 +8,19 @@ export const ServicesSlice = createSlice({
             services: [
                 {
                     title: 'Pagina web',
-                    description: 'Descripcion de servicio'
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?pagina-web',
                 },
                 {
                     title: 'Tienda online',
-                    description: 'Descripcion de servicio'
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?tienda-online',
                 },
+                
             ]
         },
         {
@@ -21,28 +28,44 @@ export const ServicesSlice = createSlice({
             services: [
                 {
                     title: 'Campañas para redes sociales',
-                    description: 'Descripcion de servicio'
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?campana-marketing',
                 },
                 {
-                    title: 'Plan para redes',
-                    description: 'Descripcion de servicio'
+                    title: 'Plan de redes sociales',
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?plan-marketing',
                 },
             ]
         },
         {
             cat:'content',
             services: [
+             
                 {
                     title: 'Contenido para redes',
-                    description: 'Descripcion de servicio'
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?redes-contenido',
                 },
                 {
                     title: 'Contenido de marca',
-                    description: 'Descripcion de servicio'
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?contenido-marca',
                 },
                 {
                     title: 'Foto producto',
-                    description: 'Descripcion de servicio'
+                    shortDescription: 'Descripcion corta del servicio',
+                    longDescription: 'Descripcion extendida y mas detallada del servicio para ofrecer mas informacion a la audiencia',
+                    urlImg: '/img/ecosistema-logo.gif',
+                    path: '?contenido-producto',
                 },
             ]
         },

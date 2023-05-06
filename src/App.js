@@ -5,6 +5,7 @@ import { Home } from './routes/Home';
 import { Servicios } from './routes/Servicios';
 import { Nosotros } from './routes/Nosotros';
 import { Contacto } from './routes/Contacto';
+import { ServiceDescription } from './routes/ServiceDescription';
 //
 //Components
 import { Header } from './components/header/Header';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/servicios" element={<Servicios />}></Route>
             <Route path="/nosotros" element={<Nosotros />}></Route>
             <Route path="/contacto" element={<Contacto />}></Route>
+            <Route path="/servicios/:servicio" element={<ServiceDescription />}></Route>
 
           </Routes>
           <Footer/>

@@ -88,4 +88,7 @@
         color: rgba(249, 224, 255, 0.609);
         font-size: 20px;
     }
+    .footer .contact-info .info {
+        flex-direction: row;
+    }
 }

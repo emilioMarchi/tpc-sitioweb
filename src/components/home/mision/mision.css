@@ -1,12 +1,11 @@
 .mision {
     height: 45%;
     margin: 4rem 0rem;
-
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.39);
-
+    
 }
 
 .mision .mision-section {
@@ -16,11 +15,11 @@
     text-align: center;
     color: white;
     
-
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     
 }
 
@@ -28,7 +27,8 @@
 .mision .mision-section-title h4{
     font-size: 28px;
     font-weight: 300; 
-    padding: 2rem 1rem ;
+    margin: 2rem 0;
+    
     line-height: 0.9; letter-spacing: 1px;
     color: rgb(255, 255, 255);
 }
@@ -84,6 +84,7 @@
 
 
     .mision .mision-section-title h4 {
-        padding-left:1rem; padding-right:1rem;
+        padding: 2rem 1rem ;
+       
     }
 }

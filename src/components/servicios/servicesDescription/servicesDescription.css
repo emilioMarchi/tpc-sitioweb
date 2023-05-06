@@ -34,9 +34,8 @@
     border: 1px solid rgba(253, 253, 253, 0.24);
     border-radius: 0.5rem;
 }
-.services-description .services-list  .service img {
-    width: 4rem;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+.services-description .services-list  .service .icon {
+    font-size: 2rem;
 }
 .services-description .services-list  .service h3 {
     color: white;
@@ -44,6 +43,7 @@
     letter-spacing: 1px;
     line-height: 1;
     margin: 0; margin-left: 1rem;
+    text-align: start;
 
 }
 
@@ -61,7 +61,7 @@
         
         
     }
-    .services-description .services-list .service img {
-        width: 6rem;
+    .services-description .services-list .service .icon {
+        font-size: 3rem;
     }
 }

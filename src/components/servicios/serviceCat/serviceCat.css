@@ -87,7 +87,7 @@
     font-weight: 200;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.863);
-    width: 15rem;
+    width: 90%;
     color: rgb(255, 255, 255);
 }
 
@@ -110,4 +110,11 @@
     .service-cat {
         margin:  0.5rem 5%;
     }
+}
+@media only screen and (min-width: 789px) {
+    .service-cat .service-cat-body .services-cat-list .service-list-item button {
+        width: 50%;
+        font-size: 20px;
+    }
+
 }

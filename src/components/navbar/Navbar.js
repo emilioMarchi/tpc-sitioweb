@@ -21,7 +21,7 @@ export const Navbar = () => {
                         >Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class={`nav-link active link ${navSelected == '/servicios' ? 'selected' : ''}`}  href="/servicios" 
+                        <a class={`nav-link active link ${navSelected == '/servicios' || navSelected == `/servicios/:${'contenido-marca'}` ? 'selected' : ''}`}  href="/servicios" 
                            
                         >Servicios</a>
                     </li>

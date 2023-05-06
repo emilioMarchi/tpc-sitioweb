@@ -1,0 +1,21 @@
+.service-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center; justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.service-banner .service-banner-body {
+    color: white;
+    text-align: center;
+}
+.service-banner .service-banner-body h3 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 0.9; letter-spacing: 1px;
+}
+.service-banner .service-banner-body h4 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 0.9; letter-spacing: 1px;
+}
