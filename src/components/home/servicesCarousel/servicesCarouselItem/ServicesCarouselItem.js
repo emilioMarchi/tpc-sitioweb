@@ -39,12 +39,13 @@ export const ServicesCarouselItem = () => {
                 servicesSliceState.navState == 'mrk' ||
                 servicesSliceState.navState == 'content' ? 
                 servicesSliceState.servicesData[catIndex].services.map((item)=>{
+                    
                     return (
                         <div className='services-card'>
-                            <img src='/img/ecosistema-logo.gif' />
+                            <img src={item.urlImg} />
                             <div className='card-title'>
                                 <h3>{item.title}</h3>
-                                <h4>{item.shortDescription}</h4>
+                                <h4>{item.shortDescription.slice(0, 75)+'...'}</h4>
                             </div>
                                 <a href={`/servicios/:${item.path}`}>Ver más</a>
                         </div>

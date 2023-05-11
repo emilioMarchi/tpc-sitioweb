@@ -27,7 +27,7 @@ const CarouselData = [
 
 export const HomeCarousel = () => {
     return(
-        <Carousel interval={7000} controls={false} indicators={false}>
+        <Carousel pause={false} interval={7000} controls={false} indicators={false}>
             {
                 CarouselData.map(item => {
                     return ( 

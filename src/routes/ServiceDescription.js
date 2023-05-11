@@ -2,9 +2,10 @@ import { useLocation } from "react-router"
 import {useEffect, useState} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 
+
 import { ServiceBanner } from "../components/serviceBanner/serviceBanner"
-
-
+import {ServicesCarousel} from '../components/home/servicesCarousel/ServicesCarousel'
+import {Contact} from '../components/contact/Contact'
 
 
 export const ServiceDescription = () => {
@@ -54,7 +55,12 @@ export const ServiceDescription = () => {
    
     if(service != undefined) {
         return(
-            <ServiceBanner service={service} />
+            <div>
+                <ServiceBanner service={service} />
+                <ServicesCarousel />
+                <Contact />
+                
+            </div>
         )
     } else {
         return(

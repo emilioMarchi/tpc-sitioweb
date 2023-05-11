@@ -1,21 +1,76 @@
 .service-banner {
-    height: 100vh;
+  
     display: flex;
     align-items: center; justify-content: center;
     background-repeat: no-repeat;
     background-position: center center;
+    padding-left:10%;
+    padding-right:10%;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    
 }
-.service-banner .service-banner-body {
+
+.service-banner .banner-body-container {
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size:auto 100%;
+    display: flex; 
+    align-items: center;
+    height: 50vh;
+}
+.service-banner .banner-body-container .service-banner-body {
     color: white;
-    text-align: center;
+    text-align: start;
+    padding: 1rem;
+    width: 55%;
 }
-.service-banner .service-banner-body h3 {
-    font-size: 42px;
-    font-weight: 500;
+.service-banner .banner-body-container .service-banner-body h3 {
+    font-size: 54px;
+    font-weight: 600;
     line-height: 0.9; letter-spacing: 1px;
+    padding: 1rem;
+
 }
-.service-banner .service-banner-body h4 {
-    font-size: 24px;
-    font-weight: 300;
+.service-banner .banner-body-container .service-banner-body h4 {
+    font-size: 18px;
+    font-weight:200;
     line-height: 0.9; letter-spacing: 1px;
+    text-shadow: 2px 2px 5px black
+}
+
+
+.service-banner .service-banner-items{
+    display: flex;
+    align-items: center; justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.service-banner .service-banner-items .service-item {
+    display: flex; align-items: center; justify-content: center;
+    height: 8rem;
+    border: 1px solid rgba(255, 255, 255, 0.424);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+.service-banner .service-banner-items .service-item h4 {
+    font-size: 20px; font-weight: 200;
+    color: white;
+}
+
+.service-longDescription {
+    width: 75%;
+    padding: 0 1rem;
+}
+.service-longDescription h3{
+    color: white;
+    font-size: 22px; font-weight: 300; 
+
 }
