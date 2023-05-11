@@ -13,8 +13,8 @@
 
 .service-banner .banner-body-container {
     background-repeat: no-repeat;
-    background-position: center right;
-    background-size:auto 100%;
+    background-position: center center;
+    background-size: 75%;
     display: flex; 
     align-items: center;
     height: 50vh;
@@ -73,4 +73,54 @@
     color: white;
     font-size: 22px; font-weight: 300; 
 
+}
+
+@media only screen and (max-width: 480px) {
+    .service-banner {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
+      
+        
+    }
+    .service-banner .banner-body-container {
+        align-items: start;
+        height: 75vh;width: 100vw;
+
+        background-position: bottom center;
+        background-size: 90%;
+   
+    }
+    .service-banner .banner-body-container .service-banner-body {
+        width: 100vw;
+        padding-top: 3rem;
+    }
+    .service-banner .service-banner-items .service-item {
+        height: 12rem;
+    }
+    .service-banner .service-banner-items .service-item h4 {
+        text-align: center;
+        font-size: 18px;
+        padding: 0;
+    }
+    .service-banner .banner-body-container .service-banner-body h3 {
+        font-size: 42px;
+    }
+    .service-banner .banner-body-container .service-banner-body h4 {
+        font-size: 20px;
+    }
+
+    .service-banner .info {
+        flex-direction: column;
+    }
+
+    .service-longDescription {
+        margin-top: 3rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .service-longDescription h3 {
+        font-size: 22px;
+        text-align: center;
+    }
 }

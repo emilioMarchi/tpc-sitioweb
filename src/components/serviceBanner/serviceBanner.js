@@ -11,7 +11,7 @@ export const ServiceBanner = ({service}) => {
                 </div>
                 <img />
             </div>
-            <div className='d-flex'>
+            <div className='d-flex info'>
                 <div className='service-longDescription'>
                     
                     <h3>{service.longDescription}</h3>
