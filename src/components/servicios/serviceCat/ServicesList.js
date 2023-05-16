@@ -1,13 +1,13 @@
 const ServiceItem = ({service}) => {
     return(
         <div className='service-list-item'>
-                <img src='/img/ecosistema-logo.gif' />
+                <img src={service.urlImg} />
                 <div className='item-body'>
                     <div className='body-info'>
-                        <h2>{service}</h2>
-                        <h3>Descripcion de servicio especifico y breve bla bla</h3>
+                        <h2>{service.title}</h2>
+                        <h3>{service.shortDescription.slice(0, 75)+'...'}</h3>
                     </div>
-                    <button className='btn-dark'>Ver más</button>
+                    <a href={`/servicios/:${service.path}`} className='btn-dark'>Ver más</a>
                 </div>
         </div>
     )

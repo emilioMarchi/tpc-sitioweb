@@ -5,14 +5,14 @@ import { ServicesList } from './ServicesList'
 
 
 
-export const ServiceCatItem = ({title, services, imageUrl}) => {
+export const ServiceCatItem = ({title, services, urlImgBanner}) => {
 
     
     const [carouselState, setCarouselState] = useState(false)
     
     return(
         <div className='service-cat'>
-            <div className='service-cat-header' style={{backgroundImage: `url(${imageUrl})`}}>
+            <div className='service-cat-header' style={{backgroundImage: `url(${urlImgBanner})`}}>
                 <div className='service-title'>
                     <h2>{title}</h2>
                    
@@ -21,7 +21,7 @@ export const ServiceCatItem = ({title, services, imageUrl}) => {
                     {
                         services.map(item => {
                             return(
-                                <h3>{item}</h3>
+                                <h3>{item.title}</h3>
                             )
                         })
                     }

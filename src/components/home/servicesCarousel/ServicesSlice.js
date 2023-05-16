@@ -4,7 +4,9 @@ export const ServicesSlice = createSlice({
     name:'servicesSlice',
     initialState:{navState:'dev', catState:[], servicesData:[
         {
+            title:'Desarrollo web',
             cat:'dev',
+            urlImgBanner: '/img/desarrollo.png',
             services: [
                 {
                     title: 'Tienda online',
@@ -38,7 +40,9 @@ export const ServicesSlice = createSlice({
             ]
         },
         {
+            title:'Marketing digital',
             cat:'mrk',
+            urlImgBanner: '/img/marketing.png',
             services: [
                 {
                     title: 'Campañas para redes sociales',
@@ -70,7 +74,9 @@ export const ServicesSlice = createSlice({
             ]
         },
         {
+            title:'Contenido de marca',
             cat:'content',
+            urlImgBanner: '/img/contenido.png',
             services: [
              
                 {
