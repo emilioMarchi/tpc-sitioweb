@@ -12,7 +12,7 @@ export const Home = () => {
     return(
         <div className='home pt-page'>
             <HomeCarousel/>
-            <div className='d-flex justify-content-center pt-5 home-title-container'>
+            <div className='d-flex justify-content-center pt-3 home-title-container'>
                 <div className='home-title'>
                     <h1>Diseñamos, planificamos y desarrollamos tu estrategia digital</h1>
                 </div>
