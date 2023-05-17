@@ -1,24 +1,40 @@
 import React from 'react';
+import axios from 'axios';
 import { Formik } from 'formik';
 
+const root = `http://170.64.181.199`
+const baseUrl = `${root}/contact`
+
+
 const FormContact = () => (
+ 
+  
   <div className='form'>
+    
     <Formik
-      initialValues={{ name: '', email: '', text: ''  }}
+      initialValues={{ userName: '', userEmail: '', userQuery: ''  }}
       validate={values => {
         const errors = {};
-        if (!values.email) {
-          errors.email = 'Required';
+        if (!values.userEmail) {
+          errors.userEmail = 'Required';
         } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.userEmail)
         ) {
-          errors.email = 'Invalid email address';
+          errors.userEmail = 'Invalid email address';
         }
         return errors;
       }}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={(values, { setSubmitting, resetForm }) => {
+        console.log(values)
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+
+          axios.post(baseUrl, values)
+          .then((res)=>{
+            console.log(res)
+            resetForm()
+            
+          })
+
           setSubmitting(false);
         }, 400);
       }}
@@ -30,37 +46,38 @@ const FormContact = () => (
         handleChange,
         handleBlur,
         handleSubmit,
+        resetForm,
         isSubmitting,
         /* and other goodies */
       }) => (
         <form onSubmit={handleSubmit}>
           <input
             type="name"
-            name="name"
+            name="userName"
             placeholder='Nombre'
 
             onChange={handleChange}
             onBlur={handleBlur}
-            value={values.name}
+            value={values.userName}
           />
-          {errors.password && touched.password && errors.password}
+        
           <input
             type="email"
-            name="email"
+            name="userEmail"
             placeholder='Número de contacto o Correo electónico'
             onChange={handleChange}
             onBlur={handleBlur}
-            value={values.email}
+            value={values.userEmail}
           />
-          {errors.email && touched.email && errors.email}
+          {errors.userEmail && touched.userEmail && errors.userEmail}
           <input
             type="text"
-            name="text"
+            name="userQuery"
             placeholder='Contanos que buscás'
 
             onChange={handleChange}
             onBlur={handleBlur}
-            value={values.text}
+            value={values.userQuery}
           />
           
           <button type="submit" disabled={isSubmitting}>

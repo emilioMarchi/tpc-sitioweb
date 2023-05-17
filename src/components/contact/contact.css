@@ -80,6 +80,9 @@
     color: rgb(255, 255, 255);
 }
 
+.contact .form form .form-not {
+    display: none;
+}
 
 @keyframes gradient {
 	0% {
@@ -99,7 +102,7 @@
         height: 75vh;
         padding: 2rem;
         margin: 2rem 0;
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
     .contact .contact-title{
         width: 50%;
@@ -142,5 +145,7 @@
         font-size: 26px;
         padding: 0;
     }
-
+    .contact .form form .form-not {
+        display: none;
+    }
 }
