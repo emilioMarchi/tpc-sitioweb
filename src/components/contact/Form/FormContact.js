@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { Formik } from 'formik';
 
-const root = `http://170.64.181.199`
-const baseUrl = `${root}/contact`
+const root = `http://170.64.181.199:8080`
+const baseUrl = `${root}/contact/new-query`
 
 
 const FormContact = () => (
