@@ -3,9 +3,10 @@
    
     background-position: start;
     background: linear-gradient(to top, transparent, rgb(5, 4, 7)),
-    url('/public/img/agencia.webp');
+    url('/public/img/nosotros.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 90vh;
 }
 
@@ -49,6 +50,8 @@
     .nosotros-bio {
         height: 75vh;
         padding: 1rem 0;
+        
+        
        
     }
     .nosotros-bio .bio-body h2 {

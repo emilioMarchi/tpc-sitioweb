@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit'
 
 export const ServicesSlice = createSlice({
     name:'servicesSlice',
-    initialState:{navState:'dev', catState:[], servicesData:[
+    initialState:{navState:'dev', catState:[],  notification:{active:false, text:[] }, servicesData:[
         {
             title:'Desarrollo web',
             cat:'dev',
@@ -131,8 +131,18 @@ export const ServicesSlice = createSlice({
         pushCatState: (state, action)=> {
             state.catState.push(action.payload)
         },
+        pushNotification: (state, action)=> {
+            const {active, text} = action.payload
+            if(state.notification.active==false) {
+                state.notification.activate = true
+                state.notification.text.push({text:text})
+            }else {
+
+            }
+            
+        },
     }
 })
 
-export const {changeNavState} = ServicesSlice.actions 
+export const {changeNavState, pushNotification} = ServicesSlice.actions 
 export default ServicesSlice.reducer

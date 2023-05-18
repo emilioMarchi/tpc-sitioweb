@@ -1,7 +1,14 @@
-import FormContact from "./Form/FormContact"
+import {FormContact} from "./Form/FormContact"
 import './contact.css'
+import { useEffect } from "react"
 
 export const Contact = () => {
+
+  
+    useEffect(() => {
+        
+    }, [])
+
     return(
         <div className='contact' id='contacto'>
             <div className='contact-title'>

@@ -1,20 +1,46 @@
 import React from 'react';
 import axios from 'axios';
 import { Formik } from 'formik';
+import {useSelector, useDispatch} from 'react-redux'
+import { changeNavState,pushNotification } from "../../home/servicesCarousel/ServicesSlice"
+import { useState,useEffect } from "react"
+import {Toaster, toast} from 'react-hot-toast'
 
 const root = `http://170.64.181.199:8080`
-const baseUrl = `${root}/contact/new-query`
+const baseUrl = `${root}/contact/new-query `
 
 
-const FormContact = () => (
+export const FormContact = () => {
  
+  const [formSubmitState, setFormSubmitState] = useState()
+  const dispatch = useDispatch()
+  const servicesSliceState = useSelector(state=>state.servicesSlice)
+  useEffect(() => {
+    
+    
+  }, [])
+
+
+  return(
+
   
   <div className='form'>
-    
+
+    <Toaster duration='10000' toastOptions={
+      {
+        style:{background:'black', color: 'white', fontSize: '24px'}
+      }
+    }/>
     <Formik
       initialValues={{ userName: '', userEmail: '', userQuery: ''  }}
       validate={values => {
         const errors = {};
+        if (!values.userName) {
+          errors.userName = 'Required';
+        } 
+        if (!values.userQuery) {
+          errors.userQuery = 'Required';
+        } 
         if (!values.userEmail) {
           errors.userEmail = 'Required';
         } else if (
@@ -25,13 +51,26 @@ const FormContact = () => (
         return errors;
       }}
       onSubmit={(values, { setSubmitting, resetForm }) => {
-        console.log(values)
+       
         setTimeout(() => {
 
           axios.post(baseUrl, values)
           .then((res)=>{
-            console.log(res)
-            resetForm()
+            if(res.status == 200){
+              dispatch(pushNotification({active:true, text :'Mensaje enviado'}))
+              console.log('mensaje enviado')
+              toast.success(`Hola ${values.userName}, tu consulta fue enviada. Pronto nos estaremos comunicando.`)
+              resetForm()
+
+              setTimeout(()=>{
+                dispatch(pushNotification({active:false, text :'otra cosa'}))
+                console.log('end')
+              }, 5000)
+            }else {
+              toast.error('Hubo un error al querer enviar el mensaje. Intenta nuevamente.')
+
+            }
+
             
           })
 
@@ -87,6 +126,5 @@ const FormContact = () => (
       )}
     </Formik>
   </div>
-);
-
-export default FormContact;
+  )
+}

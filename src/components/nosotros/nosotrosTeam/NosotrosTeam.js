@@ -4,24 +4,24 @@ import './nosotrosTeam.css'
 
 const TeamList = [
     {
-        nombre:'Emilio',
-        tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/ecosistema-logo.gif',
-    },
-    {
         nombre:'Agustina',
-        tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/ecosistema-logo.gif',
+        tareas:['Fotografía',',', 'Diseño'],
+        urlImg:'/img/users-svg/agus-user.svg',
     },
     {
         nombre:'Bruno',
-        tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/ecosistema-logo.gif',
+        tareas:['Marketing digital'],
+        urlImg:'/img/users-svg/bruno-user.svg',
     },
     {
         nombre:'Irene',
-        tareas:['Desarrollo web', 'Diseño'],
-        urlImg:'/img/ecosistema-logo.gif',
+        tareas:['Relaciones públicas',',','Venta'],
+        urlImg:'/img/users-svg/irene-user.svg',
+    },
+    {
+        nombre:'Emilio',
+        tareas:['Desarrollo web',',','Diseño'],
+        urlImg:'/img/users-svg/emilio-user.svg',
     },
 ]
 

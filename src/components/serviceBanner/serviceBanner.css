@@ -63,6 +63,7 @@
 .service-banner .service-banner-items .service-item h4 {
     font-size: 20px; font-weight: 200;
     color: white;
+    margin: 1rem;
 }
 
 .service-longDescription {

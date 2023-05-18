@@ -61,6 +61,15 @@
 
 @media only screen and (min-width: 769px) {
     .nosotros-team {
+
+    }
+    .nosotros-team-item {
+        min-width: 33%; width: 33%;
+        
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .nosotros-team {
         justify-content: center;
     }
     .nosotros-team-item {
