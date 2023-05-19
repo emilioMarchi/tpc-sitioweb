@@ -6,7 +6,7 @@ import { changeNavState,pushNotification } from "../../home/servicesCarousel/Ser
 import { useState,useEffect } from "react"
 import {Toaster, toast} from 'react-hot-toast'
 
-const root = `http://170.64.181.199:8080`
+const root = `https://api.trespuntocero.ar`
 const baseUrl = `${root}/contact/new-query `
 
 
@@ -16,7 +16,6 @@ export const FormContact = () => {
   const dispatch = useDispatch()
   const servicesSliceState = useSelector(state=>state.servicesSlice)
   useEffect(() => {
-    
     
   }, [])
 
