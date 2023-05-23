@@ -1,7 +1,7 @@
 .nosotros-team {
     display: flex; flex-wrap: nowrap;
     overflow-y: hidden;
-    width: 100%; height: 50%;
+    width: 100%; 
 } 
 .nosotros-team-item {
     display: flex; flex-direction: column;
@@ -75,5 +75,11 @@
     .nosotros-team-item {
         min-width: 20%; width: 20%;
         
+    }
+    .nosotros-team-item .team-body h3 {
+        font-size: 22px;
+    }
+    .nosotros-team-item .team-body .team-body-tareas h4 {
+        font-size: 16px;
     }
 }

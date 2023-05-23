@@ -1,6 +1,7 @@
 .nosotros-bio {
     display: flex; flex-direction: column;
-   
+    
+    margin-top: 96px;
     background-position: start;
     background: linear-gradient(to top, transparent, rgb(5, 4, 7)),
     url('/public/img/nosotros.png');
@@ -16,7 +17,7 @@
     color: white;
     height: 100%;
     display: flex; flex-direction: column;
-    justify-content: end;
+    
    
 
 }
@@ -39,19 +40,20 @@
     .nosotros-bio {
         height: 75vh;
         padding: 1rem 0;
+        margin-top: 96px;
     }
     .nosotros-bio .bio-body {
         padding-bottom: 0;
+        justify-content: center;
     }
     
 }
 
 @media only screen and (min-width: 769px) {
     .nosotros-bio {
-        height: 75vh;
+        
         padding: 1rem 0;
-        
-        
+        margin-top: 96px;
        
     }
     .nosotros-bio .bio-body h2 {
