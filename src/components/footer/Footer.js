@@ -40,7 +40,7 @@ export const Footer = () => {
                 </div>
                 <div className='icons-bar'>
                     
-                    <a href='https://www.instagram.com/trespuntocerosd/' target='_black' className='icon'>
+                    <a href='https://www.instagram.com/trespuntocero.ar/' target='_black' className='icon'>
                         <img src='/img/icons/ig-black.png' />
                     </a>
                     

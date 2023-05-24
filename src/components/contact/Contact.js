@@ -15,7 +15,7 @@ export const Contact = () => {
                 <h4>Dejanos un mensaje o contactanos por donde te quede más cómodo</h4>
                 <div className='icons-bar'>
                     
-                    <a href='https://www.instagram.com/trespuntocerosd/' target='_black' className='icon'>
+                    <a href='https://www.instagram.com/trespuntocero.ar/' target='_black' className='icon'>
                         <img src='/img/icons/ig-black.png' />
                     </a>
                     
