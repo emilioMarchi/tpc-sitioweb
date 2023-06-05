@@ -6,7 +6,7 @@ import { changeNavState,pushNotification } from "../../home/servicesCarousel/Ser
 import { useState,useEffect } from "react"
 import {Toaster, toast} from 'react-hot-toast'
 
-const root = `https://api.trespuntocero.ar`
+const root = `localhost:8080`
 const baseUrl = `${root}/contact/new-query `
 
 
@@ -53,18 +53,16 @@ export const FormContact = () => {
        
         setTimeout(() => {
 
-          axios.post(baseUrl, values)
+          axios.post('https://api.trespuntocero.ar/contact/new-query', values)
           .then((res)=>{
             if(res.status == 200){
-              dispatch(pushNotification({active:true, text :'Mensaje enviado'}))
+              axios.post('https://api.trespuntocero.ar/contact/new-query', values)
+              .then(res => console.log(res))
               console.log('mensaje enviado')
               toast.success(`Hola ${values.userName}, tu consulta fue enviada. Pronto nos estaremos comunicando.`)
               resetForm()
 
-              setTimeout(()=>{
-                dispatch(pushNotification({active:false, text :'otra cosa'}))
-                console.log('end')
-              }, 5000)
+              
             }else {
               toast.error('Hubo un error al querer enviar el mensaje. Intenta nuevamente.')
 
